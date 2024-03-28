@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/your-username/your-repository.git'
+            }
+        }
+        stage('Compile') {
+            steps {
+                dir('src') {
+                    sh 'javac Main.java'
+                }
+            }
+        }
+        stage('Run') {
+            steps {
+                dir('src') {
+                    sh 'java Main'
+                }
+            }
+        }
+    }
+}
