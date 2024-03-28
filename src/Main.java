@@ -11,8 +11,8 @@ public class Main {
         System.out.println(bank.getAccountNo());
         System.out.println(bank.withdrawMoney("abc1233",100));
         System.out.println("add Numbner of years of interest");
-        int years = sc.nextInt();
-       System.out.println(bank.moneyInterest(years));
+       // int years = sc.nextInt();
+       //System.out.println(bank.moneyInterest(years));
 
 
     }
